@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<!-- Spring ApplicationContext配置文件的路径，可使用通配符，多个路径用�,号分隔。此参数用于后面的Spring-Context loader -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+
+	<!--Spring ApplicationContext 载入 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+
+  	<!-- struts2过滤器-->
+	<filter>  
+	   <filter-name>StrutsPrepareFilter</filter-name>  
+	   <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>  
+	</filter>   
+	<filter>  
+	   <filter-name>StrutsExecuteFilter</filter-name>  
+	   <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsExecuteFilter</filter-class>  
+	</filter>  
+	<filter-mapping>  
+	   <filter-name>StrutsPrepareFilter</filter-name>  
+	   <url-pattern>/*</url-pattern>  
+	</filter-mapping>  
+	<filter-mapping>  
+	   <filter-name>StrutsExecuteFilter</filter-name>  
+	   <url-pattern>/*</url-pattern>  
+	</filter-mapping>
+	
+	<jsp-config>
+	    <taglib>
+	        <taglib-uri>oscache</taglib-uri>
+	        <taglib-location>/WEB-INF/lib/oscache-2.4.1.jar</taglib-location>
+	    </taglib>
+    </jsp-config>
+	
+	<!-- session超时定义,单位为分钟。 -->
+	<session-config>
+		<session-timeout>120</session-timeout>
+	</session-config>
+	
+	<!-- 默认首页定义 -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+
+
+</web-app>
