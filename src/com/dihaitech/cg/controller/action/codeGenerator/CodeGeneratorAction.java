@@ -179,7 +179,7 @@ public class CodeGeneratorAction extends BaseAction{
 		}
 		//创建TestAction文件
 		if(FileUtil.createTestActionFile(cg)){
-			System.out.println("创建Action文件完成...");
+			System.out.println("创建Action Test文件完成...");
 		}
 		//创建IService文件
 		if(FileUtil.createIServiceFile(cg)){
@@ -187,7 +187,7 @@ public class CodeGeneratorAction extends BaseAction{
 		}
 		//创建IServiceTest文件
 		if(FileUtil.createIServiceTestFile(cg)){
-			System.out.println("创建IService文件完成...");
+			System.out.println("创建IService Test文件完成...");
 		}
 		//创建ServiceImpl文件
 		if(FileUtil.createServiceImplFile(cg)){
@@ -199,7 +199,7 @@ public class CodeGeneratorAction extends BaseAction{
 		}
 		//创建IDaoTest文件
 		if(FileUtil.createIDaoTestFile(cg)){
-			System.out.println("创建IDaoTest文件完成...");
+			System.out.println("创建IDao Test文件完成...");
 		}
 //		//创建DaoImpl文件
 //		if(FileUtil.createDaoImplFile(cg)){

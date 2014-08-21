@@ -2,11 +2,11 @@ package ${cg.getPackagePath()}.controller.action.${cg.getObjectName()};
 
 import java.util.List;
 
-import cn.xdf.common.Property;
-import cn.xdf.controller.action.BaseAction;
-import cn.xdf.util.Page;
-import cn.xdf.util.TypeUtil;
-import cn.xdf.util.json.JSONUtil;
+import ${cg.getPackagePath()}.common.Property;
+import ${cg.getPackagePath()}.controller.action.BaseAction;
+import ${cg.getPackagePath()}.util.Page;
+import ${cg.getPackagePath()}.util.TypeUtil;
+import ${cg.getPackagePath()}.util.json.JSONUtil;
 import ${cg.getPackagePath()}.model.${cg.getClassName()};
 import ${cg.getPackagePath()}.service.I${cg.getClassName()}Service;
 

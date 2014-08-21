@@ -1,7 +1,5 @@
 package ${cg.getPackagePath()}.dao;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -9,6 +7,9 @@ import javax.annotation.Resource;
 import org.junit.Assert;
 import org.junit.Test;
 
+import ${cg.getPackagePath()}.BaseTestCase;
+import ${cg.getPackagePath()}.model.${cg.getClassName()};
+import ${cg.getPackagePath()}.util.Page;
 
 /**
  * ${cg.getModelName()} DAO 接口测试

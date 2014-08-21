@@ -150,7 +150,7 @@ public class FileUtil {
 		
 			String packagePath = cg.getPackagePath();
 			String packageFloder = Property.OUTPUT_FILE_PATH + "/" + 
-						packagePath + "." + cg.getClassName() + "/src/" +
+						packagePath + "." + cg.getClassName() + "/test/" +
 						packagePath.replaceAll("\\.", "\\/") + 
 						"/controller/action/" + cg.getObjectName();
 			System.out.println("packageFloder: " + packageFloder);
@@ -255,7 +255,7 @@ public class FileUtil {
 		
 			String packagePath = cg.getPackagePath();
 			String packageFloder = Property.OUTPUT_FILE_PATH + "/" + 
-						packagePath + "." + cg.getClassName() + "/src/" +
+						packagePath + "." + cg.getClassName() + "/test/" +
 						packagePath.replaceAll("\\.", "\\/") + "/service/";
 			System.out.println("packageFloder: " + packageFloder);
 			String fileName = "I" + cg.getClassName()+"ServiceTest.java";
@@ -412,7 +412,7 @@ public class FileUtil {
 		
 			String packagePath = cg.getPackagePath();
 			String packageFloder = Property.OUTPUT_FILE_PATH + "/" + 
-						packagePath + "." + cg.getClassName() + "/src/" +
+						packagePath + "." + cg.getClassName() + "/test/" +
 						packagePath.replaceAll("\\.", "\\/") + "/dao/";
 			System.out.println("packageFloder: " + packageFloder);
 			String fileName = "I" + cg.getClassName()+"DAOTest.java";

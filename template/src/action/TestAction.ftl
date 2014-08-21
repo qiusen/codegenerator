@@ -4,10 +4,10 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import org.junit.Assert;
 import org.junit.Test;
 
-import cn.xdf.util.DateUtil;
-import cn.xdf.model.${cg.getClassName()};
-import cn.xdf.service.I${cg.getClassName()}Service;
-import cn.xdf.controller.action.CommonTestAction;
+import ${cg.getPackagePath()}.util.DateUtil;
+import ${cg.getPackagePath()}.model.${cg.getClassName()};
+import ${cg.getPackagePath()}.service.I${cg.getClassName()}Service;
+import ${cg.getPackagePath()}.controller.action.CommonTestAction;
 
 /**
  * ${cg.getModelName()} Action 测试

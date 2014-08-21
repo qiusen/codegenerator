@@ -18,7 +18,7 @@
     </bean>
 	
 	
-    <bean id="property" class="cn.xdf.cg.Property">
+    <bean id="property" class="com.dihaitech.cg.Property">
     	<property name="BASE" value="${cg.base}"></property> 
     	<property name="PAGESIZE" value="${cg.pageSize}"></property> 
     	<property name="ACTION_EXT" value="${cg.actionExt}"></property>

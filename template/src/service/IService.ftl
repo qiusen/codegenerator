@@ -4,6 +4,7 @@ import java.util.List;
 
 
 import ${cg.getPackagePath()}.model.${cg.getClassName()};
+import ${cg.getPackagePath()}.util.Page;
 
 /**
  * ${cg.getModelName()} 业务接口

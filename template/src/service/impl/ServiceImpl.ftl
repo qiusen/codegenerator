@@ -2,7 +2,7 @@ package ${cg.getPackagePath()}.service.impl;
 
 import java.util.List;
 import javax.annotation.Resource;
-import cn.xdf.util.Page;
+import ${cg.getPackagePath()}.util.Page;
 import ${cg.getPackagePath()}.dao.I${cg.getClassName()}DAO;
 import ${cg.getPackagePath()}.model.${cg.getClassName()};
 import ${cg.getPackagePath()}.service.I${cg.getClassName()}Service;

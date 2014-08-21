@@ -2,11 +2,13 @@ package ${cg.getPackagePath()}.service;
 
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.equalTo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import ${cg.getPackagePath()}.BaseTestCase;
+import ${cg.getPackagePath()}.model.${cg.getClassName()};
+import ${cg.getPackagePath()}.util.Page;
 
 /**
  * ${cg.getModelName()} Service 接口测试
