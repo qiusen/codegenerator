@@ -6,6 +6,7 @@ import org.junit.Test;
 import ${cg.getPackagePath()}.model.${cg.getClassName()};
 import ${cg.getPackagePath()}.service.I${cg.getClassName()}Service;
 import ${cg.getPackagePath()}.controller.action.CommonTestAction;
+import ${cg.getPackagePath()}.util.DateUtil;
 
 /**
  * ${cg.getModelName()} Action 测试
