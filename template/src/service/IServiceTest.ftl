@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import ${cg.getPackagePath()}.BaseTestCase;
 import ${cg.getPackagePath()}.model.${cg.getClassName()};
 import ${cg.getPackagePath()}.util.Page;
+import ${cg.getPackagePath()}.util.DateUtil;
 
 /**
  * ${cg.getModelName()} Service 接口测试

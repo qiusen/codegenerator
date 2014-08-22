@@ -10,6 +10,7 @@ import org.junit.Test;
 import ${cg.getPackagePath()}.BaseTestCase;
 import ${cg.getPackagePath()}.model.${cg.getClassName()};
 import ${cg.getPackagePath()}.util.Page;
+import ${cg.getPackagePath()}.util.DateUtil;
 
 /**
  * ${cg.getModelName()} DAO 接口测试
