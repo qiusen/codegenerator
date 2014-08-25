@@ -11,6 +11,13 @@ import ${cg.getPackagePath()}.model.${cg.getClassName()};
 import ${cg.getPackagePath()}.util.Page;
 import ${cg.getPackagePath()}.util.DateUtil;
 
+<#list cg.getFieldList() as field>
+    <#if field.getType() == "Integer">
+import static org.hamcrest.CoreMatchers.equalTo;	<#break>            
+    </#if>
+</#list>
+
+
 /**
  * ${cg.getModelName()} Service 接口测试
  * 
