@@ -40,7 +40,7 @@ public class Test${cg.getClassName()}Action extends CommonTestAction {
         <#if field.getType() == "String">
 		${cg.getObjectName()}.set${field.getName()?cap_first}("测试");
         <#else>
-		${cg.getObjectName()}.set${field.getName()?cap_first}(123);
+		${cg.getObjectName()}.set${field.getName()?cap_first}(1);
         </#if>
         <#else>
         ${cg.getObjectName()}.set${field.getName()?cap_first}(DateUtil.stringToDate(DateUtil
