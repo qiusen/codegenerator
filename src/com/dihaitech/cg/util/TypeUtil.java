@@ -25,6 +25,8 @@ public class TypeUtil {
 			str = "Long";
 		}else if(typeUC.equalsIgnoreCase("DATE") || typeUC.startsWith("TIMESTAMP")){
 			str = "java.util.Date";
+		}else if(typeUC.equalsIgnoreCase("DOUBLE")){
+			str = "Double";
 		}else if(typeUC.startsWith("DECIMAL")){
 //			Pattern pattern = Pattern.compile("DECIMAL//(//d+//s.,//s.(//d+)//)");
 //			Matcher matcher = pattern.matcher(typeUC);
@@ -51,6 +53,8 @@ public class TypeUtil {
 			str = "Integer";
 		}else if(type.toUpperCase().startsWith("DATETIME")){
 			str = "java.util.Date";
+		}else if(typeUC.equalsIgnoreCase("DOUBLE")){
+			str = "Double";
 		}else if(typeUC.startsWith("DECIMAL")){
 			str = "Long";
 		}
